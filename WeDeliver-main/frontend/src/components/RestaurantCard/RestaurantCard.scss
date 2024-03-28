@@ -1,0 +1,43 @@
+@import "../../variables.scss";
+
+.res-cont {
+  width: auto;
+  height: auto;
+  font-family: $primaryFont;
+  .res-cont-box {
+    .res-cont-img-cont {
+      @include flex-center-center;
+      .res-cont-img {
+        width: 100%;
+        height: 10rem;
+      }
+    }
+    .res-box-desc {
+      padding: 0.5rem 1rem 1.5rem;
+      width: 100%;
+      &-name {
+        font-family: $diffFont;
+        font-weight: bold;
+      }
+      &-rating {
+        margin: 0.2rem 0;
+        font-family: $lightFont;
+      }
+      .res-box-cuisines {
+        font-family: $lighterFont;
+        width: auto;
+      }
+      .res-box-cost-cont {
+        display: flex;
+        justify-content: space-between;
+
+        .res-box-cost {
+          font-family: $lightFont;
+        }
+      }
+    }
+  }
+}
+.fontStyleLighter {
+  font-family: $lighterFont;
+}
